@@ -15,13 +15,33 @@ code {
 .uploaded-img__wrapper {
   margin: 0 auto;
   max-width: 420px;
+  width: 100%;
   height: auto;
   outline: 1px solid violet;
   vertical-align: top;
   line-height: 0;
 }
 
+.uploaded-img__wrapper:empty {
+  display: none;
+}
+
 .uploaded-img__img {
   width: 100%;
   height: auto;
+}
+
+.recognized-text__wrapper {
+  margin: 0 auto;
+  max-width: 420px;
+  width: 100%;
+  height: auto;
+}
+
+.recognized-text__wrapper p {
+  white-space: pre;
+}
+
+.recognized-text__wrapper .recognized-text__paragraph--clean {
+  white-space: normal;
 }
